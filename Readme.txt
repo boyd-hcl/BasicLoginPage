@@ -1,5 +1,6 @@
 This is a web application that performs basic login-related functionality!
 Functions this supports:
+
 -Register with user details
 -Login with existing user details
 -Prevents duplicate registration under username
