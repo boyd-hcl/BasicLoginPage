@@ -1,7 +1,8 @@
-package com.github.boydhcl;
+package com.github.boydhcl.BasicLoginPage;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -10,12 +11,10 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 
 @Entity
+@Table(name = "s_user")
 public class User{
 	
-	@Id @GeneratedValue
-	@Column(name="id")
-	private int id;
-	
+	@Id
 	@Column(name="username")
 	public String username;
 	
@@ -37,15 +36,15 @@ public class User{
 	public void setPassword(String newPassword) {
 		password = newPassword;
 	}
-	
-	public void setId(int id) {
-		this.id = id;
-	}
-	
-	public int getId() {
-		return id;
-	}
-	
+//	
+//	public void setId(int id) {
+//		this.id = id;
+//	}
+//	
+//	public int getId() {
+//		return id;
+//	}
+//	
 	public User() {
 	}
 }
